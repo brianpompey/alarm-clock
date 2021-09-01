@@ -9,3 +9,6 @@ def alarm(set_alarm_timer):
         time.sleep(1)
         current_time = datetime.datetime.now()
         now = current_time.strftime("%H:%M:%S")
+        date = current_time.strftime("%d/%m/%Y")
+        print("The Set Date is:",date)
+        print(now)
