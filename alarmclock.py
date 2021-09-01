@@ -16,3 +16,8 @@ def alarm(set_alarm_timer):
             print("Time to wake up")
             winsound.Playsound("sound.wav",winsound.SND_ASYNC)
             break
+
+
+def actual_time():
+    set_alarm_timer = f"{hour.get()}:{min.get()}:{sec.get()}"
+    alarm(set_alarm_timer)
