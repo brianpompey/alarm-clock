@@ -12,3 +12,7 @@ def alarm(set_alarm_timer):
         date = current_time.strftime("%d/%m/%Y")
         print("The Set Date is:",date)
         print(now)
+        if now == set_alarm_timer:
+            print("Time to wake up")
+            winsound.Playsound("sound.wav",winsound.SND_ASYNC)
+            break
