@@ -1,7 +1,7 @@
 from tkinter import *
 import datetime
 import time
-import winsound
+import AppKit
 
 
 def alarm(set_alarm_timer):
@@ -14,7 +14,7 @@ def alarm(set_alarm_timer):
         print(now)
         if now == set_alarm_timer:
             print("Time to wake up")
-            winsound.Playsound("sound.wav",winsound.SND_ASYNC)
+            AppKit.NSBeep()
             break
 
 
